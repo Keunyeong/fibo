@@ -14,8 +14,12 @@
   <p id="part" style="display: none;"><span id="confirmText"></span> 마리는 시켜야지!!!</p>
   <script>
     document.querySelector("#confirmBtn").addEventListener("click",function(){
-      let member = document.querySelector("#eatNum").value;
-      document.querySelector("#confirmText").innerText = member;
+      let member = Number(document.querySelector("#eatNum").value);
+      let chicken = member;
+      for(let i=0;i<member;i++){
+        
+      };
+      document.querySelector("#confirmText").innerText = chicken;
       document.querySelector("#part").style.display="block";
     })
   </script>
